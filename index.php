@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("Главная страница");
 ?><p>
-<h1>Skill up</h1>
+<h1>Главная страница</h1>
 
 
 <?$APPLICATION->IncludeComponent("bitrix:news.list","",Array(
