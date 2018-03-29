@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("Главная страница");
 <h1>Главная страница</h1>
 
 
-<?$APPLICATION->IncludeComponent("bitrix:news.list","",Array(
+<?$APPLICATION->IncludeComponent("skillup:news.list","posts",Array(
         "DISPLAY_DATE" => "Y",
         "DISPLAY_NAME" => "Y",
         "DISPLAY_PICTURE" => "Y",

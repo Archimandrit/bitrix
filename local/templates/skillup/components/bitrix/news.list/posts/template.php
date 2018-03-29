@@ -4,16 +4,19 @@
     <div class="row">
         <? foreach ($arResult['ITEMS'] as  $aItem): ?>
 
-        <div class="col-sm">
-            <img src="<?= $arResult['PICTURES'][$aItem['ID']]['src'];?>">
+        <div class="col-4">
+            <a href="<?= $aItem['DETAIL_PAGE_URL']?>">
+            <img src="<?= $aItem['DETAIL_PICTURE']['src'];?>"></a>
             <?
-            $iAuthorId = $aItem['DISPLAY_PROPERTIES']['AUTHOR']['VALUE'];
             ?>
             <div>
-                <?= $aItem['DISPLAY_PROPERTIES']['AUTHOR']['LINK_ELEMENT_VALUE'][$iAuthorId]['NAME']?>
+                <?= $aItem['AUTHOR']?>
             </div>
         </div>
         <?endforeach;?>
     </div>
+
 </div>
+
+
 
